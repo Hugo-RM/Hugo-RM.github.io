@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(177, 161, 74);
+    display: flex;
+    justify-content: center;
+    content: center;
+    padding: 2% 0 2% 0;
+}
+
+.navButton {
+    background-color: rgb(67, 67, 67);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 45px;
+    padding: 2px 5px 2px 5px;
+}
+.currentPage {
+    border: 1px solid white;
+}
+
+.imageStyle{
+    border-radius: 20%;
+    width: 250px; 
+    height: 250px;
+    object-fit: cover;
+}
+.row{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+#table{
+    
+}
+.imageFigure{
+    text-align: center;
+    /* width: 5%;  */
+}
+footer{
+    text-align: center;
+}
+#homeText{
+    text-align: center;
+}
+#center{
+    background-color: blue;
+}
+#csumbLogo {
+    height: 200px;
+    width: 200px;
+}
