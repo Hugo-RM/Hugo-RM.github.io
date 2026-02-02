@@ -1,0 +1,26 @@
+.studentImageStyle{
+    border-radius: 15%;
+    width: 300px; 
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+}
+
+.row{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.imageFigure{
+    text-align: center;
+    /* width: 5%;  */
+}
+
+.studentTitles {
+    font-size: 1.35rem;
+}
+
+#homeText{
+    text-align: center;
+    font-size: 1.75rem;
+}

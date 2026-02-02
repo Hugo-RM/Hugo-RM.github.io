@@ -1,0 +1,30 @@
+#expTable {
+    margin: 0 auto;
+    justify-content: center;
+    border: 1px solid grey;
+}
+.expTableHeader {
+    background-color: rgb(236, 239, 217);
+    padding: 1% 1% 1% 1%;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.expTableContents {
+    font-size: 1.35rem;
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+#hobbies {
+    padding: 2% 0 0 0;
+}
+#hobbiesHeader {
+    margin-left: 30%;
+    font-size: 1.75rem;
+}
+#hobbiesList {
+    padding-top: 1%;
+    margin: 0 35%;
+    width: 400px;
+    font-size: 1.35rem;
+}
