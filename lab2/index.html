@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess a number</title>
+    <link href="styles/style.css" rel="stylesheet"> 
     <script src="js/script.js" defer></script>
 </head>
-<body>
+<body id="bodyStyle">
     <header>
-        <h1>Guess the Number!</h1>
+        <div id="headerText">Guess the Number!</div>
     </header>
 
-    Guess:
-    <!-- creates a text box -->
-    <input id="userGuess" type="text" size="5">
-    <button id="guessButton">Guess!</button>
-    <div id="ansTextBox"></div>
+    <main>
+        <div>
+            Guess: 
+            <input id="userGuess" type="text" size="5">
+            <button id="guessButton">Guess!</button>
+        </div>
+        <!-- creates a text box -->
+        <div id="ansTextBox"></div>
+        <div id="message"></div>
+        <div id="endGame"></div>
+    </main>
+
 </body>
 </html>

@@ -1,0 +1,25 @@
+#bodyStyle {
+    background-image: url(../imgs/background-of-red-pandas-in-the-forest-free-vector.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+}
+#headerText {
+    background-color: rgba(44, 174, 83, 0.565);
+    display: inline;
+    padding: 2% 2% 2% 2%;
+    border-radius: 15%;
+    border: 1px solid rgba(29, 118, 55, 0.709)
+}
+
+.gameButton {
+    border: 1px solid rgba(29, 118, 55, 0.709);
+    background-color: rgba(44, 174, 83, 0.565);
+    display: inline;
+}
