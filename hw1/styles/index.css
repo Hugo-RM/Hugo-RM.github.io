@@ -1,0 +1,45 @@
+#fourCareers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.careerInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+figure {
+    background-color: rgb(212, 183, 125);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 340px;
+    margin: 0;
+}
+
+.careerName {
+    text-align: center;
+    color: rgb(39, 59, 19);
+    margin: 10px 0 5px 0;
+    font-size: 1.35rem;
+    font-weight: bolder;
+}
+
+.careerSummary {
+    text-align: center;
+    color: rgb(39, 59, 19);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.careerImg {
+    border-radius: 15%;
+    width: 100%; 
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    display: block;
+}

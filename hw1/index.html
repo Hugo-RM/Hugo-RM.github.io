@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Niche CS Careers</title>
+    <link href="styles/common.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Niche CS Careers that sound cool ig</h1> 
-        <h2>You don't need to be a SWE, other j*bs exist!</h2>
+        <h1 id="title">Niche CS Careers that sound cool ig</h1> 
+        <h2 id="subtitle">You don't need to be a SWE, other j*bs exist!</h2>
     </header>
 
     <nav>
-        <h3>Acoustic Signal Processing Engineer</h3>
-        <h3>Marine GIS Developer</h3>
-        <h3>Computational Immunology</h3>
-        <h3>Animation Pipeline Developer</h3>
+        <a href="acousticSignalProcessingEngineer.html" class="navButton">Acoustic Signal Processing Engineer</a>
+        <a href="computationalImmunology.html" class="navButton">Marine GIS Developer</a>
+        <a href="marineGISDeveloper.html" class="navButton">Computational Immunology</a>
     </nav>
     
     <main>
+        <section id="fourCareers">
+            <div class="careerInfo">
+                <figure>
+                    <img class="careerImg" src="img/aspEng.png" alt="">
+                    <figcaption class="careerName">
+                        Acoustic Signal Processing Engineer
+                    </figcaption>
+                    <p class="careerSummary">Implementing algorithms to analyze sound + vibration data for defense and sensing applications</p>
+                </figure>
 
+                <figure>
+                    <img class="careerImg" src="img/marineGISDev.png" alt="">
+                    <figcaption class="careerName">
+                        Marine GIS Developer
+                    </figcaption>
+                    <p class="careerSummary">Building geospatial software applications and spatial databases to visualize and analyze oceanographic data</p>
+                </figure>
+                
+                <figure>
+                    <img class="careerImg" src="img/compImmunology.png" alt="">
+                    <figcaption class="careerName">
+                        Computational Immunology
+                    </figcaption>
+                    <p class="careerSummary">Applying machine learning and algorithms to large-scale genomic datasets to model and predict immune system behavior</p>
+                </figure>
+            </div>
+        </section>
     </main>
     
     <footer>
-
+        <p>Hello World</p>
     </footer>
 </body>
 </html>
