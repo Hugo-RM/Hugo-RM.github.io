@@ -1,9 +1,11 @@
-#threeCareers {
+#fourCareers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 1.5%;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .careerInfo {
@@ -14,32 +16,39 @@
 }
 
 figure {
-    background-color: rgb(212, 183, 125);
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgba(76, 96, 57, 0.3);
+    border: 1px solid rgb(212, 183, 125);
+    padding: 25px;
+    border-radius: 8px;
     max-width: 340px;
     margin: 0;
 }
 
 .careerName {
     text-align: center;
-    color: rgb(39, 59, 19);
-    margin: 10px 0 5px 0;
-    font-size: 1.35rem;
-    font-weight: bolder;
+    color: rgb(212, 183, 125);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
 }
 
 .careerSummary {
     text-align: center;
-    color: rgb(39, 59, 19);
-    font-size: 1.15rem;
-    font-weight: bold;
+    color: white;
+    line-height: 1.6;
 }
 
 .careerImg {
-    border-radius: 15%;
-    width: 100%; 
+    border-radius: 8px;
+    border: 3px solid rgb(212, 183, 125);
+    width: 300px; 
     aspect-ratio: 5 / 4;
     object-fit: cover;
     display: block;
+}
+
+#summary {
+    text-align: center;
+    justify-content: center;
+    margin: 2% auto;
 }
