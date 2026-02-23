@@ -163,6 +163,7 @@ function endGame(msg) {
         resultImg.alt = 'You lose!';
         message.style.color = '#ff0000';
     } else {
+        resultImg.src = 'imgs/tie.gif';
         message.style.color = '#ffd900';
     }
     
