@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 4: Sign up Form</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <script src="js/script.js" defer></script>
 </head>
 
@@ -17,21 +18,28 @@
         Last Name: <input type="text"><br>
         Email: <input type="text"><br>
         Phone Number:<input type="text"><br><br>
-        Zip Code: <input type="text" id="zip"><br>
+        Zip Code: <input type="text" id="zip">
+        <p class="hiddenText" id="invalidZip"></p><br>
         City: <span id="cityName"></span>
         <br>
         Latitude: <span id="cityLatitude"></span>
         <br>
         Longitude: <span id="cityLongitude"></span>
         <br><br>
-        State: <select id="state"></select><br>
-        Select a County: <select id="county"></select><br>
-
-        Desired Username: <input type="text" id="username"><br>
-        <p id="usernameMessage"></p>
-        Password: <input type="password" class="password"><span id="suggestedPassword"></span><br>
-        Type Password Again: <input type="password" class="password"><br>
-        <div id="shortPasswordErr"></div>
+        State: <select id="state">
+            <option value="">Select State</option>
+        </select><br>
+        Select a County: <select id="county">
+            <option value="">Select County</option>
+        </select>
+        <p class="hiddenText" id="noStateSelected"></p><br>
+        Desired Username: <input type="text" id="username">
+        <p class="hiddenText" id="usernameMessage"></p><br>
+        Password: <input type="password" class="password" id="password1">
+        <p class="hiddenText" id="invalidPassword1"></p><br>
+        Type Password Again: <input type="password" class="password" id="password2">
+        <p class="hiddenText" id="invalidPassword2"></p><br>
+        <p id="suggestedPassword"></p>
         <input type="submit" value="Sign up!">
     </fieldset>
 </body>
