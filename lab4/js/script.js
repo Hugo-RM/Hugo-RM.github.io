@@ -39,8 +39,9 @@ async function displayCityInfo() {
 
         if (!data) {
             document.querySelector("#invalidZip").textContent = "Invalid Input";
-            document.querySelector("#invalidZip").style.color = "red";;
+            document.querySelector("#invalidZip").style.color = "red";
         } else {
+            document.querySelector("#invalidZip").textContent = "";
             document.querySelector("#cityName").textContent = data.city;
             document.querySelector("#cityLatitude").textContent = data.latitude;
             document.querySelector("#cityLongitude").textContent = data.longitude;
@@ -220,7 +221,20 @@ function checkPasswordLength(password, pElement) {
 function checkPasswordMatch() {
     let password1 = document.querySelector("#password1").value;
     let password2 = document.querySelector("#password2").value;
+
+    // I don't want to display an error if deleted or empty box
+    if (password1.length == 0 || password2.length == 0) {
+        document.querySelector("#password1").textContent = "";
+        document.querySelector("#password2").textContent = "";
+
+        return;
+    }
+
     let validLen = checkPassword1Validity() && checkPassword2Validity();
+
+    console.log(`password1: ${password1}`);
+    console.log(`password2: ${password2}`);
+    console.log(`validLen: ${validLen}`);
 
     if (validLen && password1 === password2) {
         document.querySelector("#passwordMatch").textContent = "valid password";
