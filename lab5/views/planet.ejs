@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("partials/head.ejs") %>
+</head>
+
+<body>
+    <h1 class="bg-info text-white p-3 m-0"> The Solar System </h1>
+
+    <%- include("partials/nav.ejs") %>
+
+    <div class="container-fluid row">
+        <div class="card p-4 col">
+            <h2><%= planet %></h2>
+
+            <%= planetInfo.description %>
+
+            <h3>Distance From the Sun: <%= planetInfo.distanceFromSun %></h3>
+            
+            <h3>Year Length: <%= planetInfo.yearLength %></h3>
+
+            <h3>Radius: <%= planetInfo.radius %></h3>
+            
+            <h3>Moons: <%= planetInfo.moons %> </h3>
+
+            <h3>1 day is equivalent to <%= planetInfo.oneEarthDay %> </h3>
+            <!--
+            
+                const mercury = {
+                    image: 'https://solarsystem.nasa.gov/system/stellar_items/image_files/2_feature_1600x900_mercury.jpg',
+                    distanceFromSun: '39.704 million miles',
+                    yearLength: '88 Earth Days',
+                    description: 'The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earths Moon. From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system',
+                    radius: 1516,
+                    websiteLink: 'https://solarsystem.nasa.gov/planets/mercury/overview/',
+                    oneEarthDay: '176 Earth Day',
+                    moons: 0
+                }            
+            -->
+        </div>
+
+        <div class="card col">
+            <img src="<%= planetInfo.image %>" class="rounded">
+        </div>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
+
+</body>
+
+</html>
